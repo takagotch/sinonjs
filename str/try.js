@@ -96,7 +96,7 @@ it("makes a GET request for todo items", function(){
 //server
 var server;
 
-before(function(){ server = sinon.fakeServer.create(); })'
+before(function(){ server = sinon.fakeServer.create(); });
 after(function(){ server.restore(); });
 
 it("calls callback with deserialized data", function(){
